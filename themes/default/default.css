@@ -1,0 +1,230 @@
+/* 
+Theme Name: Lola Default
+Theme URI: http://www.alecritson.co.uk/projects/lola
+Author: Alec
+Author URI: http://www.alecritson.co.uk
+Version: 1
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: This is the default theme for Lola.
+
+This theme is licensed under the GPL.
+*/
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Page styles
+===============================================================================*/
+
+html {
+font-size:62.5%
+}
+
+body {
+background:#e4e4e4;
+font-family:"Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+font-weight:400;
+font-style:normal;
+font-size:14px;
+line-height:1.5;
+color:#1e2227;
+position:relative;
+-webkit-font-smoothing:antialiased
+}
+.wrap {
+	max-width: 960px;
+	width:100%;
+	margin:0 auto;
+}
+/* Typography
+===============================================================================*/
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+}
+h1 {font-size:2.4rem;}
+h2 {font-size: 2.4rem; }
+
+em {font-size:1.1rem; color:#898989; font-style: italic;}
+p {margin:10px 0px 20px;}
+
+/* Header Styles
+===============================================================================*/
+
+header {
+	background:#1e2227;
+	padding:20px;
+	margin-bottom: 80px;
+}
+h1#logo {
+	background:url('images/logo.png');
+	height:46px;
+	width:92px;
+	margin:0 auto;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+
+/* Form Styles
+===============================================================================*/
+#lola-form {
+	background: #FFF;
+	width:500px;
+	margin:0 auto;
+	padding:20px;
+	box-sizing:border-box;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2), 0px 8px 16px rgba(0,0,0,0.08);
+	margin-bottom: 40px;
+}
+#lola-form em {
+	text-align: center;
+	display: block;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	font-size: 2rem;
+	margin: 10px 0px;
+}
+label:first-of-type {
+	margin-top: 0px;
+}
+input[type="text"] {
+	background:#1e2227;
+	box-shadow:inset 0px 1px 8px rgba(0,0,0,0.6);
+	padding:10px 15px;
+	color:white;
+	font-size: 1.6rem;
+	border:1px solid;
+	width:100%;
+	box-sizing:border-box;
+}
+input[type="text"]#domain, input[type="text"]#domain-ext {
+	width:219px;
+}
+span.dot {
+	margin:0px 5px;
+	font-weight: bold;
+}
+input[type="submit"] {
+	background:url('images/green-btn.png');
+	border:1px solid #627d4a;
+	color:white;
+	padding:10px 20px;
+	text-shadow: 0px 1px 2px rgba(98,125,74,0.75);
+	width:150px;
+	display: block;
+	margin:20px auto;
+	border-radius:3px;
+	cursor:pointer;
+}
+input[type="submit"]:hover {
+	background:url('images/blue-btn.png');
+	border:1px solid #2a8aa8;
+	text-shadow: 0px 1px 2px rgba(37,105,126,0.75);
+}
+/* Website listing Styles
+===============================================================================*/
+#website-feed {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.website-block {
+	background:white;
+	width:220px;
+	height:50px;
+	float:left;
+	overflow: hidden;
+	margin-left: 26px;
+	margin-bottom: 26px;
+	box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+.website-block:nth-child(4n-3) {
+	margin-left: 0px;
+}
+.website-info {
+	float:left;
+	padding:5px 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	width:120px;
+}
+.view-website {
+	float:right;
+	background:#1e2227;
+	font-size: 1.2rem;
+	color:white;
+	padding:15px 10px;
+	display: block;
+	height:100%;
+	text-decoration: none;
+}
+
+/* Footer Styles Styles
+===============================================================================*/
+
+footer {
+	background:#1e2227;
+	padding:20px;
+	height:100px;
+}
+#footer-content a {
+	display:block;
+	background:url('images/alec-logo.png') no-repeat;
+	text-indent: -99999px;
+	width:50px;
+	height:43px;
+	float:left;
+	margin-right:20px;
+}
+#footer-content p {
+	padding-top: 12px;
+}
