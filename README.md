@@ -83,4 +83,4 @@ Apart from that, have fun! if you need more explanation of something then please
 
 ##Licence
 
-The free version is licenced under a Creative Commons Attribution-NonCommercial 3.0 Unported License.
+The free version is licenced under a Creative Commons Attribution 3.0 Unported License.
