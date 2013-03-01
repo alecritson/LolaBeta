@@ -52,6 +52,7 @@ function lola_make_dir($domain) {
 	    die('Failed to create folders...');
 	}
 
+	// This simply creates a default page for the website you create
 	$old = 'defaultPage/index.php';
 	$new = $structure . 'index.php';
 	copy($old, $new) or die("Unable to copy $old to $new.");
@@ -59,19 +60,40 @@ function lola_make_dir($domain) {
 }
 
 function lola_add_to_xml($website_name, $domain, $ext) {
-	$site_url = $domain.".".$ext;
-	$url = "lola_websites.xml";
-	$xml = simplexml_load_file($url);
 
+// Create the full url of our domain
+$site_url = $domain.".".$ext;
+
+$doc = new DOMDocument();
+
+	// Setting formatOutput to true will turn on xml formating so it looks nicely
+	// however if you load an already made xml you need to strip blank nodes if you want this to work
+	$doc->load( 'lola_websites.xml', LIBXML_NOBLANKS);
+	$doc->formatOutput = true;
+
+	// Get the root element "links"
+	$root = $doc->documentElement;
+
+	// Create new link element
+	$link = $doc->createElement("website");
+
+	// Create and add the website title
+	$title = $doc->createElement("title", $website_name);
+	$link->appendChild($title);
+
+	// Create and add datestamp
 	$datestamp = date("d/m/Y");
+	$date = $doc->createElement("date", $datestamp);
+	$link->appendChild($date);
 
-	$sxe = new SimpleXMLElement($xml->asXML()); //In this line it create a SimpleXMLElement object with the source of the XML file. 
-	//The following lines will add a new child and others child inside the previous child created. 
-	$websites = $sxe->addChild("website"); 
-	$websites->addChild("title", $website_name); 
-	$websites->addChild("datestamp", $datestamp);
-	$websites->addChild("url", $site_url);
-	//This next line will overwrite the original XML file with new data added 
-	$sxe->asXML($url);  
+	// Create and add the website url
+	$title = $doc->createElement("url", $site_url);
+	$link->appendChild($title);
+
+	// Append new link to root element
+	$root->appendChild($link);
+
+	print $doc->save('lola_websites.xml');
+
 }
 ?>

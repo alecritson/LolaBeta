@@ -23,7 +23,9 @@ Lola simply takes the info you specify in the input fields and then adds them to
 ## Known issues ##
 
 **lola\_websites.xml**  
-Right now there is no formatting on the output of this file, this is something thats on the top of the list as I want the file to be readable and easily customised/edited, atm its basically minified.
+~~Right now there is no formatting on the output of this file, this is something thats on the top of the list as I want the file to be readable and easily customised/edited, atm its basically minified.~~  
+		
+This has been fixed, if you already have websites added thats fine when you add another website it should sort out the format for all of them :)
 
 ## Getting started
 Download the files and add to a sub directory of Localhost, such as http://localhost/lola. You can put the files in whatever directory you want, Lola runs from its own directory.
