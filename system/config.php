@@ -4,6 +4,8 @@
 This is where you configure how lola works
 */
 
+// Set time zone
+date_default_timezone_set('Europe/London');
 
 // Specify what theme to use (default ships with lola)
 // Make sure your CSS file is the same as this i.e default.css
