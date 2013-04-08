@@ -27,7 +27,9 @@ Lola simply takes the info you specify in the input fields and then adds them to
 		
 This has been fixed, if you already have websites added thats fine when you add another website it should sort out the format for all of them :)  
 
-##OSX users##  
+**If you have any issues using Lola, feel free to email me at [info@alecritson.co.uk]("mailto:info@alecritson.co.uk")**
+
+## OSX users
 By default OSX will not let you edit the hosts file, the way round this would be to find the hosts file and allow write permissions for your user.  
 
 ## Getting started
