@@ -1,4 +1,4 @@
-/* 
+	/* 
 Theme Name: Lola Default
 Theme URI: http://www.alecritson.co.uk/projects/lola
 Author: Alec
@@ -148,7 +148,7 @@ input[type="text"] {
 	box-sizing:border-box;
 }
 input[type="text"]#domain, input[type="text"]#domain-ext {
-	width:219px;
+	width:218px;
 }
 span.dot {
 	margin:0px 5px;
