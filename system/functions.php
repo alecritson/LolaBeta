@@ -93,7 +93,7 @@ $doc = new DOMDocument();
 	// Append new link to root element
 	$root->appendChild($link);
 
-	print $doc->save('lola_websites.xml');
+	return $doc->save('lola_websites.xml');
 
 }
 ?>
