@@ -23,7 +23,7 @@ $dir   = $_SERVER['DOCUMENT_ROOT'];
 $directories = array_diff(scandir($dir), $exclude_list);
 
 	foreach($directories as $website) {
- 	lola_add_to_xml($website, $website, 'local');
+ 	lola_add_to_xml($website, $website, 'dev');
  }	
 }
 
