@@ -23,7 +23,7 @@
 		<label for="website-name">Website name</label>
 		<input type="text" name="website_name">
 		<label for="domain">Domain</label>
-		<input type="text" name="domain" id="domain" placeholder="yourwebsite"> <span class="dot">.</span> <input type="text" name="domain-ext" id="domain-ext" placeholder="local">
+		<input type="text" name="domain" id="domain" placeholder="yourwebsite"> <span class="dot">.</span> <input type="text" name="domain-ext" id="domain-ext" placeholder="dev">
 		<input type="submit" value="Create website">
 	</form>
 	<em>Remember to restart apache afterwards</em>
