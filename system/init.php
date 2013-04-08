@@ -1,3 +1,4 @@
+<? ob_start(); ?>
 <?php include('config.php'); ?>
 <?php include('functions.php'); ?>
 
@@ -24,3 +25,4 @@
 	}
 	
 ?>
+<? ob_flush(); ?>
