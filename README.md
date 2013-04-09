@@ -62,7 +62,7 @@ Here you can specify where the web files of your new websites are located. Some 
 
 Set the location of your hosts file, if you are running windows you can most likely leave this as it is. Lola edits the hosts file to add an alias of your website domain. **Please remember to back up your hosts file**
 
-~~You might need to check you have the correct permissions to edit this file~~  
+_You might need to check you have the correct permissions to edit this file_  
  
 **V-Hosts file**
 
@@ -70,7 +70,7 @@ Set the location of your hosts file, if you are running windows you can most lik
 
 Set the location of your v-hosts, the location of this file depends on how you use your local dev area, as you can see I use WAMP and so, this is where my v-hosts is set. **Please remember to back up your v-hosts file**
 
-~~You might need to check you have the correct permissions to edit this file~~
+_You might need to check you have the correct permissions to edit this file_
 
 **Document Root**
 
