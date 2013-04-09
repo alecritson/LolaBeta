@@ -24,16 +24,6 @@ function lola_update_vhosts($domain, $ext){
 	$stringData .= "  ServerAdmin webmaster@" . $domain . "." . $ext . "\n";
 	$stringData .= "  DocumentRoot \"" . DOC_ROOT . "/" . $domain . "/" . WEB_ROOT ."\" \n";
 	$stringData .= "  ServerName " . $domain . "." . $ext . "\n";
-	$stringData .= "  ServerAlias " . "www." . $domain . "." . $ext . "\n";
-	$stringData .= "  ErrorLog " . "\"logs/" . $domain . "." . $ext . "-error.log\" \n";
-	$stringData .= "  CustomLog " . "\"logs/" . $domain . "." . $ext . "-access.log\" common \n";
-	$stringData .= "  <directory " . "\"". DOC_ROOT . $domain . "/" . WEB_ROOT . "\"> \n";
-	$stringData .= "    Options Indexes FollowSymLinks
-	  AllowOverride all
-	  Order Deny,Allow
-	  Deny from all
-	  Allow from 127.0.0.1";
-	$stringData .= "  \n</directory>\n";
 	$stringData .= "</VirtualHost>";
 
 	fwrite($fh, $stringData);
