@@ -1,0 +1,96 @@
+.cf:before, .cf:after { display: table; content: ""; }
+
+.cf:after { clear: both; }
+
+.cf { *zoom: 1; }
+
+/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+html { font-size: 62.5%; height: 100%; }
+
+body { background: #F5F5F5; font-family: "Open Sans", sans-serif; font-size: 14px; font-size: 1.4rem; font-weight: 400; height: 100%; color: #1f1f1f; }
+
+.dark-panel h1 { color: #525252; }
+
+h1 { font-size: 6rem; margin-bottom: 60px; font-weight: 300; color: #b8b8b8; }
+
+h2 { font-size: 2.4rem; margin-bottom: 12px; }
+
+h3 { font-size: 1.5rem; font-weight: 600; margin-bottom: 10px; }
+
+small { font-size: 1.1rem; color: #9f9f9f; }
+
+strong { font-weight: 600; }
+
+.button { border: none; color: #fff; background-color: #00aed7; -webkit-border-radius: 4px; -moz-border-radius: 24px; border-radius: 4px; cursor: pointer; padding: 10px 20px; text-decoration: none; }
+.button:hover { background: #005b71; }
+
+a { color: #00aed7; }
+
+.header-wrap { background: white; padding: 30px 0px; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; height: 133px; }
+
+header { background: white; width: 100%; max-width: 1140px; width: 100%; margin: 0 auto; }
+
+#add-website { float: right; margin-top: 20px; }
+
+#websites-list { max-width: 1140px; width: 100%; margin: 0 auto; overflow: hidden; }
+
+.dark-panel { overflow: hidden; background: #1f1f1f; margin-bottom: 80px; color: white; height: 0px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+.dark-panel.open { padding: 40px 0px; height: 470px; }
+
+.content-wrap { max-width: 1140px; width: 100%; margin: 0 auto; }
+
+.add-website { width: 560px; }
+
+.dot { margin: 0px 24px; }
+
+#domain, #domain-ext { width: 250px; }
+
+#edit-settings { display: block; float: left; background: transparent; color: white; text-decoration: none; text-align: right; margin: 30px; }
+#edit-settings img { transform: rotate(19deg); }
+
+.website-block { background: white; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; width: 250px; float: left; margin-left: 46px; margin-bottom: 46px; height: 60px; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); }
+.website-block:nth-child(4n-2) { margin-left: 0px; }
+
+.website-info { float: left; max-width: 180px; white-space: nowrap; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; padding: 10px; overflow: hidden; }
+
+.view-website { background: #1f1f1f; float: right; padding: 24px 10px; font-size: 1.2rem; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; height: inherit; color: white; text-decoration: none; }
+.view-website:hover { background: #00aed7; color: white; }
+
+.close-sidebar { float: right; display: block; cursor: pointer; margin-top: -30px; }
+
+.settings-panel { background: #1f1f1f; color: white; position: fixed; width: 260px; padding: 20px; height: 100%; margin-left: -300px; float: left; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+.settings-panel.open { margin-left: 0px; }
+.settings-panel hr { background: #333333; border: none; height: 1px; margin: 20px 0px; padding: 0; }
+
+input[type="text"] { background: #2c2c2c; border: none; color: white; padding: 10px; width: 100%; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; border: 1px solid #393939; margin: 10px 0px; }
+input[type="submit"] { margin: 20px 0px; border: none; color: #fff; background-color: #00aed7; -webkit-border-radius: 4px; -moz-border-radius: 24px; border-radius: 4px; cursor: pointer; padding: 10px 20px; font-size: 1.2rem; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+input[type="submit"]:hover { background: #005b71; }
+input[type="submit"].success { background: #27ae60 url("images/tick.png") no-repeat 15px center; padding-left: 40px; }
+input[type="submit"].error { background: #f44a56;}
+
+.momentum-logo { display: block; float: right; font-size: 1.1rem; color: #666666; }
+.momentum-logo img { margin-left: 5px; }
+
+.helper, label { display: block; }
+
+label { font-size: 1.6rem; margin-top: 20px; }
+
+.helper { color: #666666; font-size: 1.2rem; margin-top: 10px; font-style: italic; }
+
+footer { max-width: 1140px; width: 100%; margin: 0 auto; border-top: 1px solid #dedede; padding-top: 20px; font-size: 1.2rem; }
