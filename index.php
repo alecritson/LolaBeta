@@ -35,8 +35,7 @@
 			<input type="hidden" value="true" name="settingsCheck">
 			<input type="submit" value="Save settings" id="save-settings" name="saveSettings">
 			</form>
-			<hr>
-			<figure class="momentum-logo">powered by <a href="http://www.builtwithmomentum.com"><img src="system/interface/images/mmntm-logo.png" alt=""></a></figure>
+
 		</div>
 		<a href="#" class="button" id="edit-settings"><img src="system/interface/images/cog.png" alt=""></a>
 		<div class="header-wrap">
@@ -84,7 +83,7 @@
 			</div><!-- website-list -->
 
 			<footer>
-				Lola BETA was built with <a href="http://www.builtwithmomentum.com">Momentum</a>
+				Lola Beta - a project by <a href="http:///www.alecritson.co.uk">Alec Ritson</a>
 			</footer>		
 		<script src="system/interface/js/jquery.js"></script>
 		<script src="system/interface/js/lola.min.js"></script>
